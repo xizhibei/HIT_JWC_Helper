@@ -1,5 +1,9 @@
-﻿哈工大教务处小助手
+﻿HIT教务处小助手
 ======================
+
+起因&经过&结果：
+----------
+表示鄙视教务处网站，加上前期有些日子闲的慌，于是有了这个，最近简单整理了下，稍改进了下，放到这里，分享给大家
 
 主要功能：
 ----------
@@ -11,10 +15,10 @@
 
 注意:
 ---------
-一般情况下，点击程序是可以直接运行的，如果有问题的话，装个.NET Framework 2.0即可
-软件纯C#打造，比较粗糙，见谅，如果不需要代码的话：<http://115.com/file/c29ddo3q#HIT-JWC-Helper.rar>
+ - 一般情况下，点击程序是可以直接运行的，如果有问题的话，装个.NET Framework 2.0即可
+ - 软件纯C#打造，比较粗糙，见谅，如果不需要代码的话：<http://115.com/file/c29ddo3q#HIT-JWC-Helper.rar>
 
-软件中的GPA算法
+软件中的GPA算法：
 ----------------
 （分级算法，即将每门课的分数按照下面的算法换算为相应等级，然后和学分加权平均）
 
@@ -66,5 +70,5 @@ Licence
 
 Questions? || Bugs?
 -----------
-	<https://github.com/xizhibei/HIT_JWC_Helper/issues>
-	Xu Zhipei <xuzhipei@gmail.com>
+ - <https://github.com/xizhibei/HIT_JWC_Helper/issues>
+ - Xu Zhipei <xuzhipei@gmail.com>
