@@ -20,8 +20,13 @@ namespace HIT_JWC_Helper
             codeImg.Image = web.getCodeImg(codeImgUrl, "http://xscj.hit.edu.cn/hitjwgl/xs/log.asp");
             stuNum.Text = INI.ReadIniData("user", "uid", "", @".\helper.ini");
             string password = INI.ReadIniData("user", "pwd", "", @".\helper.ini");
+
+            if (password != "")
+                this.remember.Checked = true;
             if(password != "")
-                pwd.Text = Crypt.Decrypt(password);
+                pwd.Text = Crypt.Decrypt(password);  
+            this.AcceptButton = login;
+
         }
 
         private void login_Click(object sender, EventArgs e)
@@ -36,7 +41,7 @@ namespace HIT_JWC_Helper
             }
             else if (ret.Contains("学号或密码错误"))
             {
-                MessageBox.Show("验证码错误");
+                MessageBox.Show("学号或密码错误");
                 codeImg.Image = web.getCodeImg(codeImgUrl, "http://xscj.hit.edu.cn/hitjwgl/xs/log.asp");
             }
             else
@@ -46,7 +51,13 @@ namespace HIT_JWC_Helper
                     INI.WriteIniData("user", "uid", stuNum.Text.ToString(), @".\helper.ini");
                     string password = pwd.Text.ToString();
                     password = Crypt.Encrypt(password);
-                    INI.WriteIniData("user", "pwd",password , @".\helper.ini");
+                    INI.WriteIniData("user", "pwd", password, @".\helper.ini");
+                }
+                else
+                {
+                    // 取消记忆
+                    INI.WriteIniData("user", "uid", "", @".\helper.ini");
+                    INI.WriteIniData("user", "pwd", "", @".\helper.ini");
                 }
                 username = Regex.Match(ret, "<SPAN>欢迎您：([^<]+)", RegexOptions.Multiline | RegexOptions.IgnoreCase).Groups[1].ToString();
                 this.DialogResult = DialogResult.OK;
@@ -73,6 +84,7 @@ namespace HIT_JWC_Helper
                 return;
             }
             base.WndProc(ref   m);
-        } 
+        }
+
     }
 }

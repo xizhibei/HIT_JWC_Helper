@@ -168,28 +168,28 @@
             // LoginToolStripMenuItem
             // 
             this.LoginToolStripMenuItem.Name = "LoginToolStripMenuItem";
-            this.LoginToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.LoginToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.LoginToolStripMenuItem.Text = "登录";
             this.LoginToolStripMenuItem.Click += new System.EventHandler(this.LoginToolStripMenuItem_Click);
             // 
             // ImportToolStripMenuItem
             // 
             this.ImportToolStripMenuItem.Name = "ImportToolStripMenuItem";
-            this.ImportToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.ImportToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.ImportToolStripMenuItem.Text = "导入";
             this.ImportToolStripMenuItem.Click += new System.EventHandler(this.ImportToolStripMenuItem_Click);
             // 
             // ExportToolStripMenuItem
             // 
             this.ExportToolStripMenuItem.Name = "ExportToolStripMenuItem";
-            this.ExportToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.ExportToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.ExportToolStripMenuItem.Text = "导出";
             this.ExportToolStripMenuItem.Click += new System.EventHandler(this.ExportToolStripMenuItem_Click);
             // 
             // ExitToolStripMenuItem
             // 
             this.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem";
-            this.ExitToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.ExitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.ExitToolStripMenuItem.Text = "退出";
             this.ExitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
             // 
@@ -205,24 +205,26 @@
             // 
             // CreditToolStripMenuItem
             // 
-            this.CreditToolStripMenuItem.Checked = true;
-            this.CreditToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CreditToolStripMenuItem.Enabled = false;
             this.CreditToolStripMenuItem.Name = "CreditToolStripMenuItem";
-            this.CreditToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.CreditToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.CreditToolStripMenuItem.Text = "学分绩";
             this.CreditToolStripMenuItem.Click += new System.EventHandler(this.CreditToolStripMenuItem_Click);
             // 
             // GPAToolStripMenuItem
             // 
+            this.GPAToolStripMenuItem.Checked = true;
+            this.GPAToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.GPAToolStripMenuItem.Enabled = false;
             this.GPAToolStripMenuItem.Name = "GPAToolStripMenuItem";
-            this.GPAToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.GPAToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.GPAToolStripMenuItem.Text = "GPA";
             this.GPAToolStripMenuItem.Click += new System.EventHandler(this.GPAToolStripMenuItem_Click);
             // 
             // DisplayImageToolStripMenuItem
             // 
             this.DisplayImageToolStripMenuItem.Name = "DisplayImageToolStripMenuItem";
-            this.DisplayImageToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.DisplayImageToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.DisplayImageToolStripMenuItem.Text = "显示图像";
             this.DisplayImageToolStripMenuItem.Click += new System.EventHandler(this.DisplayImageToolStripMenuItem_Click);
             // 
@@ -252,7 +254,7 @@
             // AboutToolStripMenuItem
             // 
             this.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem";
-            this.AboutToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.AboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.AboutToolStripMenuItem.Text = "关于";
             this.AboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
             // 

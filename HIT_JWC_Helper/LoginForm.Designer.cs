@@ -155,6 +155,7 @@
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "登录";
+            
             ((System.ComponentModel.ISupportInitialize)(this.codeImg)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
