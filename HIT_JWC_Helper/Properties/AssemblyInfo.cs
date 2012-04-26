@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // 特性集控制。更改这些特性值可修改
 // 与程序集关联的信息。
 [assembly: AssemblyTitle("HIT_JWC_Helper")]
-[assembly: AssemblyDescription("For HITer")]
+[assembly: AssemblyDescription("UPD: Yi Lu <luyi0619@gmail.com>")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("HIT")]
 [assembly: AssemblyProduct("HIT_JWC_Helper")]

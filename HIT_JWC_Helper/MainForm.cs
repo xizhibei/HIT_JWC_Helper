@@ -130,6 +130,7 @@ namespace HIT_JWC_Helper
             {
                 foreach (Score tmp in score)
                 {
+                    if (tmp.score < 60) continue;
                     dataGridView1.Rows.Add();
                     dataGridView1.Rows[i].Cells[0].Value = !(bool)ignore[tmp.name];
                     dataGridView1.Rows[i].Cells[1].Value = i + 1;
@@ -210,7 +211,7 @@ namespace HIT_JWC_Helper
                         ignore.Add(tmp.name, false);
                 }
 
-                GetPlan();
+                //GetPlan();
 
                 Cal_Credit_Performance();
 
@@ -218,6 +219,9 @@ namespace HIT_JWC_Helper
 
                 //MessageBox.Show("OK!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 toolStripStatusLabel1.Text = "获取数据成功，计算完毕！";
+
+                this.CreditToolStripMenuItem.Enabled = true;
+                this.GPAToolStripMenuItem.Enabled = true;
             }
             else
                 outcome.Text = "没有查到相关信息！";
@@ -263,6 +267,7 @@ namespace HIT_JWC_Helper
 
                 foreach (Score tmp in score)
                 {
+                    if (tmp.score < 60) continue; //去掉不及格的课程
                     if (ignore[tmp.name].Equals(false))
                     {
                         if (!term_avg_score_tmp.ContainsKey(tmp.term))
@@ -317,6 +322,7 @@ namespace HIT_JWC_Helper
                 toolStripStatusLabel1.Text = "登录成功!";
                 string[] tmp = lf.username.Split('|');
                 welcomeText.Text = "欢迎：" + tmp[0] + tmp[1];
+                
             }
             lf.Close();
         }
