@@ -190,7 +190,17 @@ namespace HIT_JWC_Helper
                         tmp.hours = 0;
                     else
                         tmp.hours = Convert.ToInt32(hours);
-                    tmp.score = Convert.ToSingle(m[i + 7].Groups[2].ToString().Trim());
+                    Group aa = m[i + 7].Groups[2];
+                    String ss = aa.ToString();
+                    try
+                    {
+                        tmp.score = Convert.ToSingle(m[i + 7].Groups[2].ToString().Trim());
+                    }
+                    catch(Exception excp)
+                    {
+                        tmp.score = 0;
+                    }
+                    
                     tmp.other = m[i + 8].Groups[2].ToString().Trim();
                     if (tmp.other == "补考")
                     {

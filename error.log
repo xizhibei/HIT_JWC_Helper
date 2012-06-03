@@ -1,0 +1,11 @@
+[2012/5/12 9:44:02]
+远程服务器返回错误: (500) 内部服务器错误。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 HIT_JWC_Helper.Web.postData(String postDataStr, Encoding encoding, HttpWebRequest request)
+   在 HIT_JWC_Helper.Web.postData(String url, String postDataStr, Encoding encoding, String referer, Boolean withCookie)
+   在 HIT_JWC_Helper.MainForm.GetPlan()[2012/5/12 9:44:06]
+远程服务器返回错误: (500) 内部服务器错误。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 HIT_JWC_Helper.Web.postData(String postDataStr, Encoding encoding, HttpWebRequest request)
+   在 HIT_JWC_Helper.Web.postData(String url, String postDataStr, Encoding encoding, String referer, Boolean withCookie)
+   在 HIT_JWC_Helper.MainForm.GetPlan()
