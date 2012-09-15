@@ -8,7 +8,11 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Collections;
 using System.IO.Compression;
-
+/*
+ * Author:  Xu Zhipei
+ * Email:   xuzhipei@gmail.com
+ * Licence: MIT
+ * */
 namespace HIT_JWC_Helper
 {
     public class Web

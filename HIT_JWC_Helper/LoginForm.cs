@@ -2,7 +2,11 @@
 using System.Text;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
-
+/*
+ * Author:  Xu Zhipei
+ * Email:   xuzhipei@gmail.com
+ * Licence: MIT
+ * */
 namespace HIT_JWC_Helper
 {
     public partial class LoginForm : Form
@@ -11,13 +15,14 @@ namespace HIT_JWC_Helper
         
         const string codeImgUrl = "http://xscj.hit.edu.cn/hitjwgl/public/getcode.asp";
         const string loginUrl = "http://xscj.hit.edu.cn/hitjwgl/xs/Login.asp";
+        const string refer = "http://xscj.hit.edu.cn/hitjwgl/xs/log.asp";
         public string username;
         public LoginForm(ref Web web)
         {
             InitializeComponent();
             this.web = web;
-            web.getPage("http://xscj.hit.edu.cn/hitjwgl/xs/log.asp",Encoding.GetEncoding("GB2312"),null,true);
-            codeImg.Image = web.getCodeImg(codeImgUrl, "http://xscj.hit.edu.cn/hitjwgl/xs/log.asp");
+            web.getPage(refer,Encoding.GetEncoding("GB2312"),null,true);
+            codeImg.Image = web.getCodeImg(codeImgUrl, refer);
             stuNum.Text = INI.ReadIniData("user", "uid", "", @".\helper.ini");
             string password = INI.ReadIniData("user", "pwd", "", @".\helper.ini");
 
@@ -33,16 +38,16 @@ namespace HIT_JWC_Helper
         {
             string postData = "uid={0}&pwd={1}&yzm={2}&Submit2.x=18&Submit2.y=18&Submit2=%CC%E1%BD%BB";
             postData = String.Format(postData, stuNum.Text.ToString(), pwd.Text.ToString(), code.Text.ToString());
-            string ret = web.postData(loginUrl, postData, Encoding.GetEncoding("GB2312"), "http://xscj.hit.edu.cn/hitjwgl/xs/log.asp", true);
+            string ret = web.postData(loginUrl, postData, Encoding.GetEncoding("GB2312"), refer, true);
             if (ret.Contains("验证码输入错误"))
             {
                 MessageBox.Show("验证码错误");
-                codeImg.Image = web.getCodeImg(codeImgUrl, "http://xscj.hit.edu.cn/hitjwgl/xs/log.asp");
+                codeImg.Image = web.getCodeImg(codeImgUrl, refer);
             }
             else if (ret.Contains("学号或密码错误"))
             {
                 MessageBox.Show("学号或密码错误");
-                codeImg.Image = web.getCodeImg(codeImgUrl, "http://xscj.hit.edu.cn/hitjwgl/xs/log.asp");
+                codeImg.Image = web.getCodeImg(codeImgUrl, refer);
             }
             else
             {
@@ -66,7 +71,7 @@ namespace HIT_JWC_Helper
 
         private void codeImg_Click(object sender, EventArgs e)
         {
-            codeImg.Image = web.getCodeImg(codeImgUrl, "http://xscj.hit.edu.cn/hitjwgl/xs/log.asp");
+            codeImg.Image = web.getCodeImg(codeImgUrl, refer);
         }
 
         private void button1_Click(object sender, EventArgs e)

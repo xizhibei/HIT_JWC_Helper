@@ -16,7 +16,7 @@
 注意:
 ---------
  - 一般情况下，点击程序是可以直接运行的，如果有问题的话，装个.NET Framework 2.0即可
- - 软件纯C#打造，比较粗糙，见谅，如果不需要代码的话：<http://115.com/file/c29ddo3q#HIT-JWC-Helper.rar>
+ - 软件纯C#打造，比较粗糙，见谅
 
 软件中的GPA算法：
 ----------------
@@ -72,3 +72,11 @@ Questions? || Bugs?
 -----------
  - <https://github.com/xizhibei/HIT_JWC_Helper/issues>
  - Xu Zhipei <xuzhipei@gmail.com>
+ 
+ Update:
+----------
+ - 2012/9/15
+	- 更新主界面与登录界面背景。。。请轻砸==！。。。
+	- 修复成绩显示错误
+	- 重构MainForm，将成绩计算等功能移动至ScoreManager统一管理
+	- 导入导出格式略有变化，不兼容之前的了。。。（好吧，我有空改成xml格式的）

@@ -2,7 +2,11 @@
 using System.Text;
 using System.Security.Cryptography;
 using System.IO;
-
+/*
+ * Author:  Xu Zhipei
+ * Email:   xuzhipei@gmail.com
+ * Licence: MIT
+ * */
 namespace HIT_JWC_Helper
 {
     class Crypt

@@ -45,8 +45,6 @@
             this.CreditToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.GPAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.DisplayImageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.选课ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.InnovationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.帮助ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.AboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -75,11 +73,11 @@
             // 
             this.start.Enabled = false;
             this.start.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.start.Location = new System.Drawing.Point(32, 149);
+            this.start.Location = new System.Drawing.Point(42, 136);
             this.start.Name = "start";
-            this.start.Size = new System.Drawing.Size(80, 44);
+            this.start.Size = new System.Drawing.Size(102, 44);
             this.start.TabIndex = 0;
-            this.start.Text = "开始";
+            this.start.Text = "开始计算";
             this.start.UseVisualStyleBackColor = true;
             this.start.Click += new System.EventHandler(this.start_Click);
             // 
@@ -146,11 +144,10 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.文件ToolStripMenuItem,
             this.成绩计算ToolStripMenuItem,
-            this.选课ToolStripMenuItem,
             this.帮助ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(835, 25);
+            this.menuStrip1.Size = new System.Drawing.Size(833, 25);
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -168,28 +165,28 @@
             // LoginToolStripMenuItem
             // 
             this.LoginToolStripMenuItem.Name = "LoginToolStripMenuItem";
-            this.LoginToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.LoginToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.LoginToolStripMenuItem.Text = "登录";
             this.LoginToolStripMenuItem.Click += new System.EventHandler(this.LoginToolStripMenuItem_Click);
             // 
             // ImportToolStripMenuItem
             // 
             this.ImportToolStripMenuItem.Name = "ImportToolStripMenuItem";
-            this.ImportToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.ImportToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.ImportToolStripMenuItem.Text = "导入";
             this.ImportToolStripMenuItem.Click += new System.EventHandler(this.ImportToolStripMenuItem_Click);
             // 
             // ExportToolStripMenuItem
             // 
             this.ExportToolStripMenuItem.Name = "ExportToolStripMenuItem";
-            this.ExportToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.ExportToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.ExportToolStripMenuItem.Text = "导出";
             this.ExportToolStripMenuItem.Click += new System.EventHandler(this.ExportToolStripMenuItem_Click);
             // 
             // ExitToolStripMenuItem
             // 
             this.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem";
-            this.ExitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.ExitToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.ExitToolStripMenuItem.Text = "退出";
             this.ExitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
             // 
@@ -207,7 +204,7 @@
             // 
             this.CreditToolStripMenuItem.Enabled = false;
             this.CreditToolStripMenuItem.Name = "CreditToolStripMenuItem";
-            this.CreditToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.CreditToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.CreditToolStripMenuItem.Text = "学分绩";
             this.CreditToolStripMenuItem.Click += new System.EventHandler(this.CreditToolStripMenuItem_Click);
             // 
@@ -217,31 +214,16 @@
             this.GPAToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.GPAToolStripMenuItem.Enabled = false;
             this.GPAToolStripMenuItem.Name = "GPAToolStripMenuItem";
-            this.GPAToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.GPAToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.GPAToolStripMenuItem.Text = "GPA";
             this.GPAToolStripMenuItem.Click += new System.EventHandler(this.GPAToolStripMenuItem_Click);
             // 
             // DisplayImageToolStripMenuItem
             // 
             this.DisplayImageToolStripMenuItem.Name = "DisplayImageToolStripMenuItem";
-            this.DisplayImageToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.DisplayImageToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.DisplayImageToolStripMenuItem.Text = "显示图像";
             this.DisplayImageToolStripMenuItem.Click += new System.EventHandler(this.DisplayImageToolStripMenuItem_Click);
-            // 
-            // 选课ToolStripMenuItem
-            // 
-            this.选课ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.InnovationToolStripMenuItem});
-            this.选课ToolStripMenuItem.Name = "选课ToolStripMenuItem";
-            this.选课ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
-            this.选课ToolStripMenuItem.Text = "选课";
-            // 
-            // InnovationToolStripMenuItem
-            // 
-            this.InnovationToolStripMenuItem.Name = "InnovationToolStripMenuItem";
-            this.InnovationToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
-            this.InnovationToolStripMenuItem.Text = "创新研修";
-            this.InnovationToolStripMenuItem.Click += new System.EventHandler(this.InnovationToolStripMenuItem_Click);
             // 
             // 帮助ToolStripMenuItem
             // 
@@ -254,7 +236,7 @@
             // AboutToolStripMenuItem
             // 
             this.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem";
-            this.AboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.AboutToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.AboutToolStripMenuItem.Text = "关于";
             this.AboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
             // 
@@ -262,6 +244,8 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.include,
@@ -324,7 +308,7 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(12, 49);
+            this.tabControl1.Location = new System.Drawing.Point(12, 62);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(810, 579);
@@ -332,6 +316,8 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage1.BackgroundImage")));
+            this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage1.Controls.Add(this.start);
             this.tabPage1.Controls.Add(this.term);
             this.tabPage1.Controls.Add(this.dataGridView1);
@@ -339,6 +325,7 @@
             this.tabPage1.Controls.Add(this.outcome);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.label2);
+            this.tabPage1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -362,9 +349,9 @@
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 618);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 650);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(835, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(833, 22);
             this.statusStrip1.TabIndex = 11;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -377,7 +364,7 @@
             // 
             this.welcomeText.AutoSize = true;
             this.welcomeText.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.welcomeText.Location = new System.Drawing.Point(575, 25);
+            this.welcomeText.Location = new System.Drawing.Point(444, 38);
             this.welcomeText.Name = "welcomeText";
             this.welcomeText.Size = new System.Drawing.Size(0, 21);
             this.welcomeText.TabIndex = 12;
@@ -386,8 +373,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DodgerBlue;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(835, 640);
+            this.ClientSize = new System.Drawing.Size(833, 672);
             this.Controls.Add(this.welcomeText);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.tabControl1);
@@ -436,8 +424,6 @@
         private System.Windows.Forms.ToolStripMenuItem ExportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 帮助ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem AboutToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 选课ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem InnovationToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolStripMenuItem DisplayImageToolStripMenuItem;
         private System.Windows.Forms.TabControl tabControl1;

@@ -3,7 +3,11 @@ using System.Collections.Generic;
 using System.Text;
 using System.IO;
 using System.Windows.Forms;
-
+/*
+ * Author:  Xu Zhipei
+ * Email:   xuzhipei@gmail.com
+ * Licence: MIT
+ * */
 namespace HIT_JWC_Helper
 {
     class Error

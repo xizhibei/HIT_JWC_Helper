@@ -5,7 +5,11 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-
+/*
+ * Author:  Xu Zhipei
+ * Email:   xuzhipei@gmail.com
+ * Licence: MIT
+ * */
 namespace HIT_JWC_Helper
 {
     public partial class GetEncryptPwd : Form

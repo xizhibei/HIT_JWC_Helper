@@ -1,9 +1,5 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="HIT_JWC_Helper.Properties" GeneratedClassName="Settings">
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)">
   <Profiles />
-  <Settings>
-    <Setting Name="DEPARTMENT_PATH" Type="System.String" Scope="User">
-      <Value Profile="(Default)">department.txt</Value>
-    </Setting>
-  </Settings>
+  <Settings />
 </SettingsFile>

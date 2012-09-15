@@ -1,7 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-
+/*
+ * Author:  Xu Zhipei
+ * Email:   xuzhipei@gmail.com
+ * Licence: MIT
+ * */
 namespace HIT_JWC_Helper
 {
     class GPA_Algorithms

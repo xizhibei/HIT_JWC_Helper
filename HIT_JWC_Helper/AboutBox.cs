@@ -100,6 +100,5 @@ namespace HIT_JWC_Helper
         }
         #endregion
 
-
     }
 }
